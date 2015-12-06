@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
 
-class Authenticate
+class Admin2
 {
     /**
      * The Guard implementation.
@@ -24,7 +24,6 @@ class Authenticate
     {
         $this->auth = $auth;
     }
-
     /**
      * Handle an incoming request.
      *
@@ -34,16 +33,22 @@ class Authenticate
      */
     public function handle($request, Closure $next)
     {
-        if ($this->auth->guest()) {
+         if ($this->auth->guest()) {
             if ($request->ajax()) {
                 return response('Unauthorized.', 401);
-            } else
-             {
+            } else {
                 return redirect()->guest('auth/login');
             }
-        }else
-        if($this->auth->user()->role=='0'){
+        }else{
+            if($this->auth->user()->role=='2'){
                 return $next($request);
+            }
+            else
+            {
+                return redirect()->guest('auth/login');
+            }
+
+
         }
 
         return $next($request);
