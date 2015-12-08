@@ -21,7 +21,7 @@ Route::get('afrizal',function(){
 
 Route::get('home',['middleware'=>'auth',function(){
 	
-		echo 'welcome home '.Auth::user()->name.'.';
+		echo 'welcome home '.Auth::user()->username.'.';
 }]);
 
 Route::get('admin',['middleware'=>'admin',function(){
@@ -48,8 +48,16 @@ Route::get('user/{id}',['middleware'=>'admin',function($id){
 	}
 }]);
 
-Route::controllers([
-	'auth' => 'Auth\AuthController', 
-	'password' =>'Auth\PasswordController', 
-]);
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
+
+// Registration routes...
+Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::post('auth/register', 'Auth\AuthController@postRegister');
+
+// Route::post('auth/register', function(){
+	
+// 	echo " tes register";
+// });
