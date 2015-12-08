@@ -13,3 +13,7 @@ public function user()
 {
 	return $this->belongsTo('App\User','username');
 }
+
+public function presence(){
+	return $this->hasMany('App\Presence','nim_tutor');
+}
