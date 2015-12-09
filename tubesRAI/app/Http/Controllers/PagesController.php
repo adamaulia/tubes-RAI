@@ -35,19 +35,12 @@ class PagesController extends Controller
 
     public function report(){
         return view('report');        // view page '/resources/views/register.php'
-<<<<<<< HEAD
+
     } 
 
     public function logout(){
         return view('logout');
-    }
-
-    public function profil(){
-        return view('profil');
-    }
-
-=======
-    }   
+    }  
 
     public function member(){
         return view('member');        // view page '/resources/views/register.php'
@@ -64,7 +57,10 @@ class PagesController extends Controller
     public function contact(){
         return view('contact');        // view page '/resources/views/register.php'
     }   
->>>>>>> 20d06b61beacd06fdaff243f103235b2c0c98e36
+
+    public function loginStaff(){
+        return view('loginStaff');
+    }
     /**
      * Display a listing of the resource.
      *

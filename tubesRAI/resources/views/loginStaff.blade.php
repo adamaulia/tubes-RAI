@@ -34,12 +34,13 @@
   <div style="position: absolute; left: 55%; top: 63px">
     <div style="position: relative; left: -36%; ">      
     <div class="container"> 
-      <div>
-        <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp        
-        <a href="register"><b><font color="white" size='4'>REGISTER</font></b></a>&nbsp&nbsp&nbsp
-        <a href="news"><b><font color="white" size='4'>NEWS</font></b></a>&nbsp&nbsp&nbsp
-        <a href="login"><b><font color="white" size='4'>LOG IN</font></b></a>&nbsp&nbsp&nbsp
-      </div>
+      <div class="btn-group">   
+        <form action="loginStaff" method="post">
+        <button type="button" class="btn btn-primary">Home</button>
+        
+          <button type="button" class="btn btn-primary">Log In</button>
+        </form>
+    </div>
   </div>
   </div>  
   </div>
@@ -98,11 +99,11 @@
   <div style="position: absolute; left: 50%; top: 735px">
     <label>@2016</label>
     </div>
-    <div style="position: absolute; left: 75%; top: 735px">
+    <!-- <div style="position: absolute; left: 75%; top: 735px">
       <a href="about"><font color="white" size="2">About Us</font></a>
       &nbsp&nbsp&nbsp
       <a href="contact"><font color="white" size="2">Contact Us</font></a>
-    </div>
+    </div> -->
   </center>
   </body>
 

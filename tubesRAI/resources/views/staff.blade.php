@@ -34,8 +34,11 @@
     <div style="position: relative; left: -36%; ">  		
   	<div class="container"> 
 		<div class="btn-group">		
+        <form action="loginStaff" method="post">
 		    <button type="button" class="btn btn-primary">Home</button>
-		    <button type="button" class="btn btn-primary">Log In</button>
+        
+		      <button type="button" class="btn btn-primary">Log In</button>
+        </form>
 		</div>		
 	</div>
 	</div>	
@@ -134,9 +137,9 @@
     <label>@2016</label>
     </div>
     <div style="position: absolute; left: 75%; top: 735px">
-      <a href="about"><font color="white" size="2">About Us</font></a>
+      <!-- <a href="about"><font color="white" size="2">About Us</font></a>
       &nbsp&nbsp&nbsp
-      <a href="contact"><font color="white" size="2">Contact Us</font></a>
+      <a href="contact"><font color="white" size="2">Contact Us</font></a> -->
     </div>    
 
    
