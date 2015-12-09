@@ -54,21 +54,16 @@ class ParticipantController extends Controller
             $role=0;
         }
 
-<<<<<<< HEAD
 
-=======
         $password=Request::get('nim');
->>>>>>> f783e815adcf4440badb3e2091dd6eb800e45d7c
+
 
         //echo "password ".$password;
         //buat user
         $user->username=Request::get('nim');
         $user->role=$role;
-<<<<<<< HEAD
         $user->password=Request::get('nim');
-=======
         $user->password=bcrypt($password);
->>>>>>> f783e815adcf4440badb3e2091dd6eb800e45d7c
         $user->save();
         //echo $user->password;
         //buat participant
@@ -81,10 +76,8 @@ class ParticipantController extends Controller
         $participant->membership_type=Request::get('role');
         $participant->save();
 
-<<<<<<< HEAD
-=======
+
         //return  $user;
->>>>>>> f783e815adcf4440badb3e2091dd6eb800e45d7c
         return redirect('home')->with('message','berhasil register');
 
     }

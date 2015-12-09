@@ -44,7 +44,7 @@
         <a href="login"><b><font color="white" size='4'>PROFILE</font></b></a>&nbsp&nbsp&nbsp
 
         @else
-        <a href="profil"><b><font color="white" size='4'>{{ Auth::user()->username }}</font></b></a>&nbsp&nbsp&nbsp
+        <a href="member"><b><font color="white" size='4'>{{ Auth::user()->username }}</font></b></a>&nbsp&nbsp&nbsp
         <a href="auth/logout"><b><font color="white" size='4'>LOG OUT</font></b></a>&nbsp&nbsp&nbsp
         @endif
 

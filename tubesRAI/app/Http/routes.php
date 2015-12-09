@@ -82,8 +82,8 @@ Route::resource('news','NewsController');
 Route::resource('activity', 'ActivityController');
 
 Route::get('register_participant','ParticipantController@index');
-<<<<<<< HEAD
+
 Route::post('register_participant','ParticipantController@store');
-=======
-Route::post('register_participant','ParticipantController@store');
->>>>>>> f783e815adcf4440badb3e2091dd6eb800e45d7c
+
+
+
