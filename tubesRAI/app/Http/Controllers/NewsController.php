@@ -42,7 +42,11 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, null);
+        $this->validate($request,[
+            'nik' => 'required',
+            'title' => 'required',
+            'content' => 'required',
+        ]);
 
         News::create($request->all());
 
@@ -85,7 +89,11 @@ class NewsController extends Controller
      */
     public function update($id, Request $request)
     {
-        $this->validate($request, null);
+        $this->validate($request, [
+            'nik' => 'required',
+            'title' => 'required',
+            'content' => 'required',
+        ]);
 
         $news = News::findOrFail($id);
         $news->update($request->all());
