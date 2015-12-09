@@ -35,6 +35,7 @@ class PagesController extends Controller
 
     public function report(){
         return view('report');        // view page '/resources/views/register.php'
+<<<<<<< HEAD
     } 
 
     public function logout(){
@@ -45,6 +46,25 @@ class PagesController extends Controller
         return view('profil');
     }
 
+=======
+    }   
+
+    public function member(){
+        return view('member');        // view page '/resources/views/register.php'
+    } 
+
+    public function pay(){
+        return view('pay');        // view page '/resources/views/register.php'
+    } 
+
+    public function about(){
+        return view('about');        // view page '/resources/views/register.php'
+    }   
+
+    public function contact(){
+        return view('contact');        // view page '/resources/views/register.php'
+    }   
+>>>>>>> 20d06b61beacd06fdaff243f103235b2c0c98e36
     /**
      * Display a listing of the resource.
      *

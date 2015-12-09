@@ -27,7 +27,7 @@
   	<div style="position: absolute; left: 50%; top: 15px">
         <div style="position: relative; left: -50%;">  		
   			<img src="image\header.jpg" width="1050" height="120"> 	  		
-  		</div>
+  		</div>         
   	</div>
 
   <div style="position: absolute; left: 55%; top: 63px">
@@ -35,12 +35,14 @@
     <div class="container"> 
       <div>
         <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp        
+        <a href="home"><b><font color="white" size='4'>REGISTER</font></b></a>&nbsp&nbsp&nbsp        
+        <a href="login"><b><font color="white" size='4'>NEWS</font></b></a>&nbsp&nbsp&nbsp
         <a href="login"><b><font color="white" size='4'>LOG OUT</font></b></a>&nbsp&nbsp&nbsp
       </div>
   </div>
   </div>  
   </div> 
-
+                                                                                                                                                                                                                                   
   <div style="position: absolute; left: 50%; top: 670px">
     <div style="position: relative; left: -50%;">     
       <img src="image\footer.jpg" width="1050" height="120">              
@@ -55,19 +57,40 @@
     </div>
   </div>
 
-  <div style="position: absolute; left: 50%; top: 170px">
+  <div style="position: absolute; left: 50%; top: 280px">
        <div style="position: relative; left: -50%;">     
-        <img src="image\border.jpg" width="650" height="490">              
+        <img src="image\border.jpg" width="300" height="350">              
       </div>
     </div>   
 
     <!-- Form -->
-    <div style="position: absolute; left: 50%; top: 165px">
+    <div style="position: absolute; left: 50%; top: 290px">
       <div style="position: relative; left: -50%;">  
-        <h1>Tutor and Members Attendance Report</h1>    
+        <h1>Contact Us</h1>            
       </div>  
     </div>
-     
+
+    <div style="position: absolute; left: 50%; top: 380px">
+      <div style="position: relative; left: -50%;">  
+        <table style="width:100%">
+          <tr>
+            <td><img src="image\fb.png" width="30px" height="30px" left="10px"></td>            
+            <td>&nbsp&nbsp&nbsp<a href="www.facebook.com"><font color="black" size="3">Facebook.com/ESAP</font></a></td>
+          </tr>
+          <tr><td>&nbsp</td></tr>
+          <tr>
+            <td><img src="image\email.png" width="30px" height="30px" left="10px"></td>            
+            <td>&nbsp&nbsp&nbsp<a href="facebook.com"><font color="black" size="3">ESAP@gmail.com</font></a></td>
+          </tr>
+          <tr><td>&nbsp</td></tr>
+          <tr>
+            <td><img src="image\map.png" width="30px" height="40px" left="10px"></td>            
+            <td>&nbsp&nbsp&nbsp<a href="facebook.com"><font color="black" size="3">E107 Telkom University</font></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>  
+
     <div style="position: absolute; left: 50%; top: 735px">
     <label>@2016</label>
     </div>
@@ -75,8 +98,8 @@
       <a href="about"><font color="white" size="2">About Us</font></a>
       &nbsp&nbsp&nbsp
       <a href="contact"><font color="white" size="2">Contact Us</font></a>
-    </div>     
-
+    </div>
+     
     </center>
   </body>
 

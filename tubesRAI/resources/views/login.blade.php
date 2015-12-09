@@ -64,13 +64,13 @@
         <div class="container">                  
           <form class="form-horizontal" role="form" action="/auth/login">
             <div class="form-group">
-              <label class="control-label col-sm-2" for="username">Username :</label>
+              <label class="control-label col-sm-2" name="username">Username :</label>
               <div class="col-sm-3">
                 <input type="text" class="form-control" placeholder="Enter username" >
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="password">password :</label>
+              <label class="control-label col-sm-2" name="password">password :</label>
               <div class="col-sm-3">
                 <input type="password" class="form-control" placeholder="Enter password" >
               </div>
@@ -86,7 +86,15 @@
     </div>
   </div>
 
-    </center>
+  <div style="position: absolute; left: 50%; top: 735px">
+    <label>@2016</label>
+    </div>
+    <div style="position: absolute; left: 75%; top: 735px">
+      <a href="about"><font color="white" size="2">About Us</font></a>
+      &nbsp&nbsp&nbsp
+      <a href="contact"><font color="white" size="2">Contact Us</font></a>
+    </div>
+  </center>
   </body>
 
 </html>

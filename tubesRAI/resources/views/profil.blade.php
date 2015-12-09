@@ -77,25 +77,25 @@
         <div class="container">        
           <form class="form-horizontal" role="form">
             <div class="form-group">
-              <label class="control-label col-sm-2" for="fullname">Full Name :</label>
+              <label class="control-label col-sm-2" name="fullname">Full Name :</label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" placeholder="Enter full name" >
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="placeofbirth">Place of Birth :</label>
+              <label class="control-label col-sm-2" name="placeofbirth">Place of Birth :</label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" placeholder="Enter Place of Birth" >
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="dateofbirth">Date of Birth :</label>
+              <label class="control-label col-sm-2" name="dateofbirth">Date of Birth :</label>
               <div class="col-sm-4">
                 <input type="date" class="form-control" placeholder="Enter Date of Birth" >
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="gender">Place of Birth :</label>              
+              <label class="control-label col-sm-2" name="gender">Place of Birth :</label>              
             </div>
             <div style="position: absolute; left: 160px; top: 147px">
               <div style="position: relative; left: 50px;">
@@ -106,26 +106,26 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="class">Class :</label>
+              <label class="control-label col-sm-2" name="class">Class :</label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" placeholder="Enter Class" >
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="NIM">NIM :</label>
+              <label class="control-label col-sm-2" name="NIM">NIM :</label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" placeholder="Enter NIM" >
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="major">Major :</label>
+              <label class="control-label col-sm-2" name="major">Major :</label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" placeholder="Enter Major" >
               </div>
             </div>
 
             <div class="form-group">
-              <label class="control-label col-sm-2" for="major">Membership Type :</label>
+              <label class="control-label col-sm-2" name="major">Membership Type :</label>
               <div style="position: absolute; left: 160px; top: 334px">
                 <div style="position: relative; left: 50px;">
                   <div class="dropdown">
@@ -150,7 +150,14 @@
       </div>
     </div>
 
-    
+    <div style="position: absolute; left: 50%; top: 735px">
+    <label>@2016</label>
+    </div>
+    <div style="position: absolute; left: 75%; top: 735px">
+      <a href="about"><font color="white" size="2">About Us</font></a>
+      &nbsp&nbsp&nbsp
+      <a href="contact"><font color="white" size="2">Contact Us</font></a>
+    </div>    
 
    
     </center>
