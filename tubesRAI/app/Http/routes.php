@@ -73,3 +73,6 @@ Route::get('contact', 'pagescontroller@contact');
 	
 // 	echo " tes register";
 // });
+
+Route::resource('news','NewsController');
+Route::resource('activity', 'ActivityController');
