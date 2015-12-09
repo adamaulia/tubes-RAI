@@ -76,6 +76,8 @@ Route::get('loginStaff', 'pagescontroller@loginStaff');
 // 	echo " tes register";
 // });
 
+Route::get('api/news/', 'NewsController@apiIndex');
+
 Route::resource('news','NewsController');
 Route::resource('activity', 'ActivityController');
 
