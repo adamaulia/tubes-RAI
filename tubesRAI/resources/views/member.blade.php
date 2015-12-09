@@ -76,14 +76,18 @@
       <div style="position: relative; left: -30%;">  
         <div class="container">        
           <form class="form-horizontal" role="form">
+          <div class="form-group">
+              <label class="control-label col-sm-2" name="NIM">NIM :</label>
+              <div class="col-sm-4">
+                <label class="control-label col-sm-2"></label>
+              </div>
+            </div>
             <div class="form-group">
               <label class="control-label col-sm-2" name="fullname">Full Name :</label>
               <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
               </div>
             </div>
-            
-                       
                       
             <div class="form-group">
               <label class="control-label col-sm-2" name="class">Class :</label>
@@ -91,12 +95,7 @@
                 <label class="control-label col-sm-2"></label>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" name="NIM">NIM :</label>
-              <div class="col-sm-4">
-                <label class="control-label col-sm-2"></label>
-              </div>
-            </div>
+            
             <div class="form-group">
               <label class="control-label col-sm-2" name="major">Major :</label>
               <div class="col-sm-4">
@@ -106,7 +105,23 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" name="major">Membership Type :</label>
+              <label class="control-label col-sm-2" name="faculty">Faculty :</label>
+              <div class="col-sm-4">
+                <div class="col-sm-4">
+                <label class="control-label col-sm-2"></label>
+              </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" name="level">Level :</label>
+              <div class="col-sm-4">
+                <div class="col-sm-4">
+                <label class="control-label col-sm-2"></label>
+              </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" name="membership_type">Membership Type :</label>
               <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
               </div>
