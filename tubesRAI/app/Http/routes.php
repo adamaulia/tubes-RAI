@@ -37,6 +37,8 @@ Route::get('admin2',['middleware'=>'admin2',function(){
 }]);
 
 
+
+
 Route::get('user/{id}',['middleware'=>'admin',function($id){
 	if(Auth::guest()){
 		return Redirect::to('auth/login');
@@ -47,6 +49,15 @@ Route::get('user/{id}',['middleware'=>'admin',function($id){
 		echo 'The user with ID of '.$id.'has email of : '.$user->email;	
 	}
 }]);
+
+
+
+Route::get('tutor', ['middleware'=>'admin',function(){
+	if(Auth::guest()){
+		return Redirect::to('loginStaff');
+	}
+}]);
+
 
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
