@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 
 use App\News;
 use Illuminate\Http\Request;
+use Response;
 use Carbon\Carbon;
 use Session;
 
@@ -118,4 +119,11 @@ class NewsController extends Controller
         return redirect('news');
     }
 
+    public function apiIndex(){
+        $news = News::all();
+        return Response::json([
+            'data' => $news->toArray()
+            ],200);
+    }
+    
 }

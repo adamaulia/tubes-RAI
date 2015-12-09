@@ -70,5 +70,7 @@ Route::get('report', 'pagescontroller@report');
 // 	echo " tes register";
 // });
 
+Route::get('api/news/', 'NewsController@apiIndex');
+
 Route::resource('news','NewsController');
 Route::resource('activity', 'ActivityController');
