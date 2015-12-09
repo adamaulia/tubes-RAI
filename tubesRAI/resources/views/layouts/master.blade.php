@@ -33,7 +33,9 @@
 						<li><a href="{{ url('/auth/login') }}">Login</a></li>
 						<li><a href="{{ url('/auth/register') }}">Register</a></li>
 					@else
-						<li><a href="#">{{ Auth::user()->name }}</a></li>
+						<li><a href="activity">activity</a></li>
+						<li><a href="news">news</a></li>
+						<li><a href="#">{{ Auth::user()->username }}</a></li>
 						<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
 					@endif
 				</ul>
