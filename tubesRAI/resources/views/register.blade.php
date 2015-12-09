@@ -90,35 +90,12 @@
               </div>
             </div>
                 </br>
-             </br>    
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="placeofbirth">Place of Birth :</label>
-              <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="Enter Place of Birth" name="place">
-              </div>
-            </div>
-                </br>   
-                </br> 
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="dateofbirth">Date of Birth :</label>
-              <div class="col-sm-4">
-                <input type="date" class="form-control" placeholder="Enter Date of Birth" name="date">
-              </div>
-           </div>
+  
 
-             </br> 
-             </br> 
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="gender">Gender:</label>              
-            </div>
             <div style="position: absolute; left: 160px; top: 147px">
               <div style="position: relative; left: 50px;">
-             </br> 
-             </br> 
-                <div class="radio">
-                  <label><input type="radio" name="optradio">Male</label>
-                  <label><input type="radio" name="optradio">Female</label>
-                </div>
+
+                
               </div>
             </div>
 
@@ -173,14 +150,8 @@
               <div style="position: absolute; left: 160px; top: 334px">
                 <div style="position: relative; left: 50px;">
 
-                     </br> 
-                    </br> 
-                     </br> 
-                    </br> 
-                     </br> 
-                      </br>
-                    </br>
-                  </br>
+ 
+                </br>
                 </br>
                     <select  role="menu" aria-labelledby="menu1" name="role">
                       <option role="presentation">--</option>
@@ -194,10 +165,9 @@
             
             <div class="form-group">
 
-              <div class="col-sm-offset-2 col-sm-1">
-                </br>   
-                </br>   
-                </br>    
+              <div class="col-sm-offset-1 col-sm-1">
+              </br>
+     
                 <button type="submit" class="btn btn-default">Submit</button>
               </div>
             </div>
@@ -207,7 +177,14 @@
     </div>
     {!! Form::close() !!}
 
-   
+   <div style="position: absolute; left: 50%; top: 735px">
+    <label>@2016</label>
+    </div>
+    <div style="position: absolute; left: 75%; top: 735px">
+      <a href="about"><font color="white" size="2">About Us</font></a>
+      &nbsp&nbsp&nbsp
+      <a href="contact"><font color="white" size="2">Contact Us</font></a>
+    </div>   
     </center>
   </body>
 

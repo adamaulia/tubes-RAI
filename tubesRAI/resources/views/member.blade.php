@@ -82,26 +82,9 @@
                 <label class="control-label col-sm-2"></label>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" name="placeofbirth">Place of Birth :</label>
-              <div class="col-sm-4">
-                <label class="control-label col-sm-2"></label>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" name="dateofbirth">Date of Birth :</label>
-              <div class="col-sm-4">
-                <label class="control-label col-sm-2"></label>
-              </div>
-            </div>            
-            <div class="form-group">
-              <label class="control-label col-sm-2" name="gender">Gender :</label>
-              <div class="col-sm-4">
-                <div class="col-sm-4">
-                <label class="control-label col-sm-2"></label>
-              </div>
-              </div>
-            </div>           
+            
+                       
+                      
             <div class="form-group">
               <label class="control-label col-sm-2" name="class">Class :</label>
               <div class="col-sm-4">
@@ -110,7 +93,7 @@
             </div>
             <div class="form-group">
               <label class="control-label col-sm-2" name="NIM">NIM :</label>
-              <<div class="col-sm-4">
+              <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
               </div>
             </div>
