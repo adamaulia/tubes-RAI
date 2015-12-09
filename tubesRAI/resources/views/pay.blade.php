@@ -76,15 +76,26 @@
           <form class="form-horizontal" role="form">
             <div class="form-group">
               <label class="control-label col-sm-2">Choose File :</label>
-              <div class="col-sm-4">
-                <label class="control-label col-sm-2"></label>
+              <div class="col-sm-2">
+                <input type="file" name="img">              
               </div>
+              <div class="col-sm-1">
+                <input type="submit" value = "Upload"></input>
+              </div> 
             </div>
           </form>
         </div>
       </div>
     </div>  
 
+    <div style="position: absolute; left: 50%; top: 735px">
+    <label>@2016</label>
+    </div>
+    <div style="position: absolute; left: 75%; top: 735px">
+      <a href="about"><font color="white" size="2">About Us</font></a>
+      &nbsp&nbsp&nbsp
+      <a href="contact"><font color="white" size="2">Contact Us</font></a>
+    </div>     
      
     </center>
   </body>

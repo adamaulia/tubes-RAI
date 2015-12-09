@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('afrizal',function(){
-	echo " kerjain rai jal";
+Route::get('tes',function(){
+	echo " tes";
 });
 
 Route::get('home',['middleware'=>'auth',function(){
@@ -67,6 +67,8 @@ Route::get('staff', 'pagescontroller@staff');
 Route::get('report', 'pagescontroller@report');
 Route::get('member', 'pagescontroller@member');
 Route::get('pay', 'pagescontroller@pay');
+Route::get('about', 'pagescontroller@about');
+Route::get('contact', 'pagescontroller@contact');
 // Route::post('auth/register', function(){
 	
 // 	echo " tes register";

@@ -27,7 +27,7 @@
   	<div style="position: absolute; left: 50%; top: 15px">
         <div style="position: relative; left: -50%;">  		
   			<img src="image\header.jpg" width="1050" height="120"> 	  		
-  		</div>
+  		</div>         
   	</div>
 
   <div style="position: absolute; left: 55%; top: 63px">
@@ -35,12 +35,14 @@
     <div class="container"> 
       <div>
         <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp        
+        <a href="home"><b><font color="white" size='4'>REGISTER</font></b></a>&nbsp&nbsp&nbsp        
+        <a href="login"><b><font color="white" size='4'>NEWS</font></b></a>&nbsp&nbsp&nbsp
         <a href="login"><b><font color="white" size='4'>LOG OUT</font></b></a>&nbsp&nbsp&nbsp
       </div>
   </div>
   </div>  
   </div> 
-
+                                                                                                                                                                                                                                   
   <div style="position: absolute; left: 50%; top: 670px">
     <div style="position: relative; left: -50%;">     
       <img src="image\footer.jpg" width="1050" height="120">              
@@ -53,30 +55,38 @@
           <img src="image\register.jpg" width="1050px" height="565px">       
       </div>
     </div>
+  </div>  
+
+  <!-- Form -->  
+  <div style="position: absolute; left: 50%; top: 300px ;width:900px">
+    <div style="position: relative; left: -50%;">       
+      <div style=" border-style: solid; background-color:white">
+        <h1><b>ESAP</b></h1>
+        <table style="width:90%">
+          <tr>
+            <td>
+        <p>ESAP stands for English Self Access Program. This program is designed to assist Tel-U academia and ESAP Members to improve their english communication competence skills.it is one of the programs funded by Directorate General of Higher Education (DIKTI) in 2009-2011.Since 2012, ESAP runs under Language Center of Telkom University</p>          
+        </td>        
+        </tr>
+        <tr><td>&nbsp</td>
+        </tr>
+        </table>
+      </div>
+    </div>
   </div>
 
-  <div style="position: absolute; left: 50%; top: 170px">
-       <div style="position: relative; left: -50%;">     
-        <img src="image\border.jpg" width="650" height="490">              
-      </div>
-    </div>   
-
-    <!-- Form -->
-    <div style="position: absolute; left: 50%; top: 165px">
-      <div style="position: relative; left: -50%;">  
-        <h1>Tutor and Members Attendance Report</h1>    
-      </div>  
-    </div>
-     
-    <div style="position: absolute; left: 50%; top: 735px">
+  <div style="position: absolute; left: 50%; top: 735px">
     <label>@2016</label>
-    </div>
-    <div style="position: absolute; left: 75%; top: 735px">
-      <a href="about"><font color="white" size="2">About Us</font></a>
-      &nbsp&nbsp&nbsp
-      <a href="contact"><font color="white" size="2">Contact Us</font></a>
-    </div>     
+  </div>
+  <div style="position: absolute; left: 75%; top: 735px">
+    <a href="about"><font color="white" size="2">About Us</font></a>
+    &nbsp&nbsp&nbsp
+    <a href="contact"><font color="white" size="2">Contact Us</font></a>
+  </div>
 
+    
+
+     
     </center>
   </body>
 

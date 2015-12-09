@@ -38,8 +38,15 @@
         <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp        
         <a href="register"><b><font color="white" size='4'>REGISTER</font></b></a>&nbsp&nbsp&nbsp
         <a href="news"><b><font color="white" size='4'>NEWS</font></b></a>&nbsp&nbsp&nbsp
+        @if(Auth::guest())
         <a href="login"><b><font color="white" size='4'>LOG IN</font></b></a>&nbsp&nbsp&nbsp
+<<<<<<< HEAD
         <a href="login"><b><font color="white" size='4'>PROFILE</font></b></a>&nbsp&nbsp&nbsp
+=======
+        @else
+        <a href="login"><b><font color="white" size='4'>{{ Auth::user()->username }}</font></b></a>&nbsp&nbsp&nbsp
+        @endif
+>>>>>>> origin/master
       </div>
   </div>
   </div>  
@@ -55,6 +62,15 @@
   			<img src="image\footer.jpg" width="1050" height="120"> 	  		
   		</div>
   	</div>
+
+    <div style="position: absolute; left: 50%; top: 735px">
+    <label>@2016</label>
+    </div>
+    <div style="position: absolute; left: 75%; top: 735px">
+      <a href="about"><font color="white" size="2">About Us</font></a>
+      &nbsp&nbsp&nbsp
+      <a href="contact"><font color="white" size="2">Contact Us</font></a>
+    </div>    
     </center>
   </body>
 
