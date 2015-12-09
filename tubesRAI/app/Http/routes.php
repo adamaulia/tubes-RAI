@@ -61,6 +61,7 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 Route::get('home','pagescontroller@home');
 Route::get('register', 'pagescontroller@register');
 Route::get('news', 'pagescontroller@news');
+Route::get('profil', 'pagescontroller@profil');
 Route::get('login', 'pagescontroller@login');
 Route::get('tutor', 'pagescontroller@tutor');
 Route::get('staff', 'pagescontroller@staff');

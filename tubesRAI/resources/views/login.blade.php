@@ -62,7 +62,7 @@
       <div style=" border-style: solid; background-color:white">
         <h1>Login</h1>
         <div class="container">                  
-          <form class="form-horizontal" role="form">
+          <form class="form-horizontal" role="form" action="/auth/login">
             <div class="form-group">
               <label class="control-label col-sm-2" for="username">Username :</label>
               <div class="col-sm-3">

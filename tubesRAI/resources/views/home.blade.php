@@ -41,7 +41,8 @@
         @if(Auth::guest())
         <a href="login"><b><font color="white" size='4'>LOG IN</font></b></a>&nbsp&nbsp&nbsp
         @else
-        <a href="login"><b><font color="white" size='4'>{{ Auth::user()->username }}</font></b></a>&nbsp&nbsp&nbsp
+        <a href="profil"><b><font color="white" size='4'>{{ Auth::user()->username }}</font></b></a>&nbsp&nbsp&nbsp
+        <a href="auth/logout"><b><font color="white" size='4'>LOG OUT</font></b></a>&nbsp&nbsp&nbsp
         @endif
       </div>
   </div>
