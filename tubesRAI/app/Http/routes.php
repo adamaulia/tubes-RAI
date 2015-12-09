@@ -52,11 +52,11 @@ Route::get('user/{id}',['middleware'=>'admin',function($id){
 
 
 
-Route::get('tutor', ['middleware'=>'admin',function(){
-	if(Auth::guest()){
-		return Redirect::to('loginStaff');
-	}
-}]);
+// Route::get('tutor', ['middleware'=>'admin',function(){
+// 	if(Auth::guest()){
+// 		return view('loginStaff');
+// 	}
+// }]);
 
 
 Route::get('auth/login', 'Auth\AuthController@getLogin');
@@ -72,7 +72,7 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 Route::get('home','pagescontroller@home');
 Route::get('register', 'pagescontroller@register');
 Route::get('news', 'pagescontroller@news');
-Route::get('profil', 'pagescontroller@profil');
+Route::get('member/{id}', 'pagescontroller@member');
 Route::get('login', 'pagescontroller@login');
 Route::get('tutor', 'pagescontroller@tutor');
 Route::get('staff', 'pagescontroller@staff');

@@ -48,7 +48,7 @@ class ParticipantController extends Controller
         $Temprole=Request::get('role');
 
         if ( strcmp ( $Temprole, "Membership") == 0  ){
-            $role=1;
+            $role=0;
         }else 
         if ( strcmp ( $Temprole, "Non Membership") == 0  ){
             $role=0;

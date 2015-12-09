@@ -3,12 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Participant;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use DB;
 
 class PagesController extends Controller
 {
+
+
+
+
     public function home(){
         return view('home');        // view page '/resources/views/home.php'
     }    
@@ -42,8 +47,12 @@ class PagesController extends Controller
         return view('logout');
     }  
 
-    public function member(){
-        return view('member');        // view page '/resources/views/register.php'
+    public function member($id){
+      //  $Participant = Participant::findOrFail($id);
+        //return view('students.index', compact('students'));
+        $user = DB::table('participants')->where('nim', $id)->first();
+
+        return view('member', compact('user'));        // view page '/resources/views/register.php'
     } 
 
     public function pay(){

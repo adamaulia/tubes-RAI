@@ -77,41 +77,24 @@
         <div class="container">        
           <form class="form-horizontal" role="form">
             <div class="form-group">
-              <label class="control-label col-sm-2" name="fullname">Full Name :</label>
+              <label class="control-label col-sm-2" name="fullname" >Full Name :</label>
               <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
+                <input type="text" class="form-control" value="{{$user->name }}" name="username" readonly>
               </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" name="placeofbirth">Place of Birth :</label>
-              <div class="col-sm-4">
-                <label class="control-label col-sm-2"></label>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" name="dateofbirth">Date of Birth :</label>
-              <div class="col-sm-4">
-                <label class="control-label col-sm-2"></label>
-              </div>
-            </div>            
-            <div class="form-group">
-              <label class="control-label col-sm-2" name="gender">Gender :</label>
-              <div class="col-sm-4">
-                <div class="col-sm-4">
-                <label class="control-label col-sm-2"></label>
-              </div>
-              </div>
-            </div>           
+            </div>                       
             <div class="form-group">
               <label class="control-label col-sm-2" name="class">Class :</label>
               <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
+                <input type="text" class="form-control" value="{{$user->class }}" name="username" readonly>
               </div>
             </div>
             <div class="form-group">
               <label class="control-label col-sm-2" name="NIM">NIM :</label>
-              <<div class="col-sm-4">
+              <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
+                <input type="text" class="form-control" value="{{$user->nim }}" name="username" readonly>
               </div>
             </div>
             <div class="form-group">
@@ -119,6 +102,7 @@
               <div class="col-sm-4">
                 <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
+                 <input type="text" class="form-control" value="{{$user->major }}" name="username" readonly>
               </div>
               </div>
             </div>
@@ -126,6 +110,7 @@
               <label class="control-label col-sm-2" name="major">Membership Type :</label>
               <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
+                <input type="text" class="form-control" value="{{$user->membership_type }}" name="username" readonly>
               </div>
               </div>
             </div>            
