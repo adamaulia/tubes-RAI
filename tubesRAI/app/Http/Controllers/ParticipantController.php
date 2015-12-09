@@ -54,12 +54,15 @@ class ParticipantController extends Controller
             $role=0;
         }
 
+
         $password=Request::get('nim');
+
 
         //echo "password ".$password;
         //buat user
         $user->username=Request::get('nim');
         $user->role=$role;
+        $user->password=Request::get('nim');
         $user->password=bcrypt($password);
         $user->save();
         //echo $user->password;
@@ -72,6 +75,7 @@ class ParticipantController extends Controller
         $participant->level=Request::get('level');
         $participant->membership_type=Request::get('role');
         $participant->save();
+
 
         //return  $user;
         return redirect('home')->with('message','berhasil register');

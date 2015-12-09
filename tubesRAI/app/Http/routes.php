@@ -81,7 +81,10 @@ Route::get('member', 'pagescontroller@member');
 Route::get('pay', 'pagescontroller@pay');
 Route::get('about', 'pagescontroller@about');
 Route::get('contact', 'pagescontroller@contact');
+Route::get('staff', 'pagescontroller@loginStaff');
+Route::get('tutor', 'pagescontroller@loginTutor');
 Route::get('loginStaff', 'pagescontroller@loginStaff');
+Route::get('loginTutor', 'pagescontroller@loginTutor');
 // Route::post('auth/register', function(){
 	
 // 	echo " tes register";
@@ -93,4 +96,8 @@ Route::resource('news','NewsController');
 Route::resource('activity', 'ActivityController');
 
 Route::get('register_participant','ParticipantController@index');
+
 Route::post('register_participant','ParticipantController@store');
+
+
+

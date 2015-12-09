@@ -70,6 +70,9 @@ class PagesController extends Controller
     public function loginStaff(){
         return view('loginStaff');
     }
+    public function loginTutor(){
+        return view('loginTutor');
+    }
     /**
      * Display a listing of the resource.
      *
