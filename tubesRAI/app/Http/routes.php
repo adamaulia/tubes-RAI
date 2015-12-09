@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('afrizal',function(){
-	echo " kerjain rai jal";
+Route::get('tes',function(){
+	echo " tes";
 });
 
 Route::get('home',['middleware'=>'auth',function(){
