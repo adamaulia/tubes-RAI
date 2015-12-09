@@ -35,8 +35,13 @@
     <div style="position: relative; left: -36%; ">      
     <div class="container"> 
       <div>
+<<<<<<< HEAD
         <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp  
         
+=======
+        
+        <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp        
+>>>>>>> de81b39a437612554fafc5998b7c1e9760afc118
         <a href="register"><b><font color="white" size='4'>REGISTER</font></b></a>&nbsp&nbsp&nbsp
 
         <a href="news"><b><font color="white" size='4'>NEWS</font></b></a>&nbsp&nbsp&nbsp
