@@ -35,7 +35,12 @@
     <div style="position: relative; left: -36%; ">      
     <div class="container"> 
       <div>
+<<<<<<< HEAD
+
         <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp        
+=======
+        <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp       
+>>>>>>> 289f40c9054388e06081693dff37fae75ca1892e
         <a href="register"><b><font color="white" size='4'>REGISTER</font></b></a>&nbsp&nbsp&nbsp
         <a href="news"><b><font color="white" size='4'>NEWS</font></b></a>&nbsp&nbsp&nbsp
         @if(Auth::guest())
@@ -44,9 +49,14 @@
         <a href="login"><b><font color="white" size='4'>PROFILE</font></b></a>&nbsp&nbsp&nbsp
 
         @else
-        <a href="profil"><b><font color="white" size='4'>{{ Auth::user()->username }}</font></b></a>&nbsp&nbsp&nbsp
+<<<<<<< HEAD
+        <a href="member/{{Auth::user()->username}}"><b><font color="white" size='4'>{{ Auth::user()->username }}</font></b></a>&nbsp&nbsp&nbsp
+=======
+        <a href="member"><b><font color="white" size='4'>{{ Auth::user()->username }}</font></b></a>&nbsp&nbsp&nbsp
+>>>>>>> 289f40c9054388e06081693dff37fae75ca1892e
         <a href="auth/logout"><b><font color="white" size='4'>LOG OUT</font></b></a>&nbsp&nbsp&nbsp
         @endif
+
 
       </div>
   </div>

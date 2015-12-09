@@ -37,6 +37,8 @@ Route::get('admin2',['middleware'=>'admin2',function(){
 }]);
 
 
+
+
 Route::get('user/{id}',['middleware'=>'admin',function($id){
 	if(Auth::guest()){
 		return Redirect::to('auth/login');
@@ -47,6 +49,15 @@ Route::get('user/{id}',['middleware'=>'admin',function($id){
 		echo 'The user with ID of '.$id.'has email of : '.$user->email;	
 	}
 }]);
+
+
+
+// Route::get('tutor', ['middleware'=>'admin',function(){
+// 	if(Auth::guest()){
+// 		return view('loginStaff');
+// 	}
+// }]);
+
 
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
@@ -61,7 +72,7 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 Route::get('home','pagescontroller@home');
 Route::get('register', 'pagescontroller@register');
 Route::get('news', 'pagescontroller@news');
-Route::get('profil', 'pagescontroller@profil');
+Route::get('member/{id}', 'pagescontroller@member');
 Route::get('login', 'pagescontroller@login');
 Route::get('tutor', 'pagescontroller@tutor');
 Route::get('staff', 'pagescontroller@staff');
@@ -70,7 +81,10 @@ Route::get('member', 'pagescontroller@member');
 Route::get('pay', 'pagescontroller@pay');
 Route::get('about', 'pagescontroller@about');
 Route::get('contact', 'pagescontroller@contact');
+Route::get('staff', 'pagescontroller@loginStaff');
+Route::get('tutor', 'pagescontroller@loginTutor');
 Route::get('loginStaff', 'pagescontroller@loginStaff');
+Route::get('loginTutor', 'pagescontroller@loginTutor');
 // Route::post('auth/register', function(){
 	
 // 	echo " tes register";
@@ -80,3 +94,10 @@ Route::get('api/news/', 'NewsController@apiIndex');
 
 Route::resource('news','NewsController');
 Route::resource('activity', 'ActivityController');
+
+Route::get('register_participant','ParticipantController@index');
+
+Route::post('register_participant','ParticipantController@store');
+
+
+

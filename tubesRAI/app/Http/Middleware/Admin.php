@@ -40,7 +40,7 @@ class Admin
                 return redirect()->guest('auth/login');
             }
         }else{
-            if($this->auth->user()->role=='1'){
+            if($this->auth->user()->role=='2'){
                 return $next($request);
             }
             else

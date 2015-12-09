@@ -64,7 +64,7 @@
     <!-- Form -->
     <div style="position: absolute; left: 50%; top: 165px">
       <div style="position: relative; left: -50%;">  
-        <h1>Member Attendance</h1>    
+        <h1>Participant Attendance</h1>    
       </div>  
     </div>
     
