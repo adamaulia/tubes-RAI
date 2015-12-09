@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>  	
+  <head>    
   <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css">
   <link href="{{asset('css/bootstrap-theme.css')}}" rel="stylesheet" type="text/css">
   <link href="{{asset('css/bootstrap-theme.min.css')}}" rel="stylesheet" type="text/css">
@@ -11,44 +11,46 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <style>
-	div.tombol {
+  div.tombol {
     position: relative;
     top: 100px;
     right: 450px;    
     color: black;
   }
-		
+    
   </style>
   </head>
 
   
   <body>
-  	<center>
-  	<div style="position: absolute; left: 50%; top: 15px">
-        <div style="position: relative; left: -50%;">  		
-  			<img src="image\header.jpg" width="1050" height="120"> 	  		
-  		</div>
-  	</div>
+    <center>
+    <div style="position: absolute; left: 50%; top: 15px">
+        <div style="position: relative; left: -50%;">     
+        <img src="image\header.jpg" width="1050" height="120">        
+      </div>
+    </div>
 
   <div style="position: absolute; left: 55%; top: 63px">
     <div style="position: relative; left: -36%; ">      
     <div class="container"> 
       <div>
         <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp        
-        <a href="login"><b><font color="white" size='4'>LOG OUT</font></b></a>&nbsp&nbsp&nbsp
+        <a href="register"><b><font color="white" size='4'>REGISTER</font></b></a>&nbsp&nbsp&nbsp
+        <a href="news"><b><font color="white" size='4'>NEWS</font></b></a>&nbsp&nbsp&nbsp
+        <a href="login"><b><font color="white" size='4'>LOG IN</font></b></a>&nbsp&nbsp&nbsp
       </div>
   </div>
   </div>  
-  </div> 
+  </div>
 
   <div style="position: absolute; left: 50%; top: 670px">
-    <div style="position: relative; left: -50%;">     
+     <div style="position: relative; left: -50%;">     
       <img src="image\footer.jpg" width="1050" height="120">              
     </div>
   </div>
 
   <div style="position: absolute; left: 50%; top: 135px">
-    <div style="position: relative; left: -50%;">     	
+    <div style="position: relative; left: -50%;">       
         <div class="container">                  
           <img src="image\register.jpg" width="1050px" height="565px">       
       </div>
@@ -59,12 +61,14 @@
        <div style="position: relative; left: -50%;">     
         <img src="image\border.jpg" width="650" height="490">              
       </div>
-    </div>   
+    </div>
+
+   
 
     <!-- Form -->
     <div style="position: absolute; left: 50%; top: 165px">
       <div style="position: relative; left: -50%;">  
-        <h1>Tutor Attendance</h1>    
+        <h1>Profile Page</h1>    
       </div>  
     </div>
     
@@ -73,56 +77,61 @@
         <div class="container">        
           <form class="form-horizontal" role="form">
             <div class="form-group">
-              <label class="control-label col-sm-2" for="fullname">Full Name :</label>
+              <label class="control-label col-sm-2" name="fullname">Full Name :</label>
               <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="Enter full name" >
+                <label class="control-label col-sm-2"></label>
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="nim">NIM :</label>
+              <label class="control-label col-sm-2" name="placeofbirth">Place of Birth :</label>
               <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="NIM" >
-              </div>
-            </div>  
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="Class">Class :</label>
-              <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="class" >
-              </div>
-            </div>                  
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="major">Major :</label>
-              <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="class" >
-              </div>
-            </div>                                                  
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="shift">Shift :</label>
-              <div class="col-sm-1">
-                <select class="selectpicker">
-                  <option>Shift 1</option>
-                  <option>Shift 2</option>
-                  <option>Shift 3</option>
-                  <option>Shift 4</option>
-                  <option>Shift 5</option>
-                </select>
-              </div>
-            </div>                      
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="date">Date :</label>
-              <div class="col-sm-4">
-                <input type="date" class="form-control" placeholder="Enter Date" >
+                <label class="control-label col-sm-2"></label>
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="activity">Esap Activity :</label>
+              <label class="control-label col-sm-2" name="dateofbirth">Date of Birth :</label>
               <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="class" >
+                <label class="control-label col-sm-2"></label>
+              </div>
+            </div>            
+            <div class="form-group">
+              <label class="control-label col-sm-2" name="gender">Gender :</label>
+              <div class="col-sm-4">
+                <div class="col-sm-4">
+                <label class="control-label col-sm-2"></label>
+              </div>
+              </div>
+            </div>           
+            <div class="form-group">
+              <label class="control-label col-sm-2" name="class">Class :</label>
+              <div class="col-sm-4">
+                <label class="control-label col-sm-2"></label>
               </div>
             </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" name="NIM">NIM :</label>
+              <<div class="col-sm-4">
+                <label class="control-label col-sm-2"></label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" name="major">Major :</label>
+              <div class="col-sm-4">
+                <div class="col-sm-4">
+                <label class="control-label col-sm-2"></label>
+              </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" name="major">Membership Type :</label>
+              <div class="col-sm-4">
+                <label class="control-label col-sm-2"></label>
+              </div>
+              </div>
+            </div>            
             <div class="form-group">        
               <div class="col-sm-offset-2 col-sm-1">
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default">Upload Bukti Pembayaran</button>
               </div>
             </div>
           </form>

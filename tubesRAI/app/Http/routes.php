@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('afrizal',function(){
@@ -65,6 +65,8 @@ Route::get('login', 'pagescontroller@login');
 Route::get('tutor', 'pagescontroller@tutor');
 Route::get('staff', 'pagescontroller@staff');
 Route::get('report', 'pagescontroller@report');
+Route::get('member', 'pagescontroller@member');
+Route::get('pay', 'pagescontroller@pay');
 // Route::post('auth/register', function(){
 	
 // 	echo " tes register";

@@ -39,6 +39,7 @@
         <a href="register"><b><font color="white" size='4'>REGISTER</font></b></a>&nbsp&nbsp&nbsp
         <a href="news"><b><font color="white" size='4'>NEWS</font></b></a>&nbsp&nbsp&nbsp
         <a href="login"><b><font color="white" size='4'>LOG IN</font></b></a>&nbsp&nbsp&nbsp
+        <a href="login"><b><font color="white" size='4'>PROFILE</font></b></a>&nbsp&nbsp&nbsp
       </div>
   </div>
   </div>  
