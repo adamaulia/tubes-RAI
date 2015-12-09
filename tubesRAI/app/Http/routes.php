@@ -78,3 +78,6 @@ Route::get('loginStaff', 'pagescontroller@loginStaff');
 
 Route::resource('news','NewsController');
 Route::resource('activity', 'ActivityController');
+
+Route::get('register_participant','ParticipantController@index');
+Route::post('register_participant','ParticipantController@store');

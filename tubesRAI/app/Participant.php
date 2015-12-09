@@ -14,7 +14,7 @@ class Participant extends Model
 
 	public function payment()
 	{
-		return $this->belongsTo('App\Payment','nim')
+		return $this->belongsTo('App\Payment','nim');
 	}
 
 	public function presence(){

@@ -19,6 +19,7 @@
   }
 		
   </style>
+  <title>Registration</title>
   </head>
 
   
@@ -66,82 +67,137 @@
    
 
     <!-- Form -->
+    {!! Form::open(array('url' => 'register_participant', 'method' => 'post')) !!}
+
+
     <div style="position: absolute; left: 50%; top: 165px">
       <div style="position: relative; left: -50%;">  
         <h1>Register Now</h1>    
       </div>  
     </div>
     
+    
     <div style="position: absolute; left: 50%; top: 240px">
       <div style="position: relative; left: -30%;">  
         <div class="container">        
           <form class="form-horizontal" role="form">
+             </br> 
+              </br> 
             <div class="form-group">
-              <label class="control-label col-sm-2" name="fullname">Full Name :</label>
+              <label class="control-label col-sm-2" for="fullname">Full Name :</label>
               <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="Enter full name" >
+                <input type="text" class="form-control" placeholder="Enter full name" name="username">
               </div>
             </div>
+                </br>
+             </br>    
             <div class="form-group">
-              <label class="control-label col-sm-2" name="placeofbirth">Place of Birth :</label>
+              <label class="control-label col-sm-2" for="placeofbirth">Place of Birth :</label>
               <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="Enter Place of Birth" >
+                <input type="text" class="form-control" placeholder="Enter Place of Birth" name="place">
               </div>
             </div>
+                </br>   
+                </br> 
             <div class="form-group">
-              <label class="control-label col-sm-2" name="dateofbirth">Date of Birth :</label>
+              <label class="control-label col-sm-2" for="dateofbirth">Date of Birth :</label>
               <div class="col-sm-4">
-                <input type="date" class="form-control" placeholder="Enter Date of Birth" >
+                <input type="date" class="form-control" placeholder="Enter Date of Birth" name="date">
               </div>
-            </div>
+           </div>
+
+             </br> 
+             </br> 
             <div class="form-group">
-              <label class="control-label col-sm-2" name="gender">Place of Birth :</label>              
+              <label class="control-label col-sm-2" for="gender">Gender:</label>              
             </div>
             <div style="position: absolute; left: 160px; top: 147px">
               <div style="position: relative; left: 50px;">
+             </br> 
+             </br> 
                 <div class="radio">
                   <label><input type="radio" name="optradio">Male</label>
                   <label><input type="radio" name="optradio">Female</label>
                 </div>
               </div>
             </div>
+
+             
+             </br> 
             <div class="form-group">
-              <label class="control-label col-sm-2" name="class">Class :</label>
+              <label class="control-label col-sm-2" for="class">Class :</label>
               <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="Enter Class" >
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" name="NIM">NIM :</label>
-              <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="Enter NIM" >
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" name="major">Major :</label>
-              <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="Enter Major" >
+                <input type="text" class="form-control" placeholder="Enter Class" name="class">
               </div>
             </div>
 
+             </br> 
+             </br> 
             <div class="form-group">
-              <label class="control-label col-sm-2" name="major">Membership Type :</label>
+              <label class="control-label col-sm-2" for="NIM">NIM :</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Enter NIM" name="nim">
+              </div>
+            </div>
+             </br> 
+             </br> 
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="major">Fakultas :</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Enter fakultas" name="fakultas">
+              </div>
+            </div>
+
+             </br> 
+             </br> 
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="major">Major :</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Enter Major" name="major">
+              </div>
+            </div>
+
+          </br>
+          </br>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="major">Level :</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="level" name="level">
+              </div>
+            </div>
+
+             </br> 
+             </br> 
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="major">Membership Type :</label>
               <div style="position: absolute; left: 160px; top: 334px">
                 <div style="position: relative; left: 50px;">
-                  <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choose Membership
-                    <span class="caret"></span></button>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Membership</a></li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Non Membership</a></li>          
-                    </ul>
-                  </div>
+
+                     </br> 
+                    </br> 
+                     </br> 
+                    </br> 
+                     </br> 
+                      </br>
+                    </br>
+                  </br>
+                </br>
+                    <select  role="menu" aria-labelledby="menu1" name="role">
+                      <option role="presentation">--</option>
+                      <option role="presentation" value="Membership">Membership</option>
+                      <option role="presentation" value="Non Membership">Non Membership</option>          
+                    </select>
+
                 </div>
               </div>
             </div>
             
-            <div class="form-group">        
+            <div class="form-group">
+
               <div class="col-sm-offset-2 col-sm-1">
+                </br>   
+                </br>   
+                </br>    
                 <button type="submit" class="btn btn-default">Submit</button>
               </div>
             </div>
@@ -149,15 +205,7 @@
         </div>
       </div>
     </div>
-
-    <div style="position: absolute; left: 50%; top: 735px">
-    <label>@2016</label>
-    </div>
-    <div style="position: absolute; left: 75%; top: 735px">
-      <a href="about"><font color="white" size="2">About Us</font></a>
-      &nbsp&nbsp&nbsp
-      <a href="contact"><font color="white" size="2">Contact Us</font></a>
-    </div>    
+    {!! Form::close() !!}
 
    
     </center>
