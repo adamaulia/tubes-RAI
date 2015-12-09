@@ -48,6 +48,7 @@
         <a href="auth/logout"><b><font color="white" size='4'>LOG OUT</font></b></a>&nbsp&nbsp&nbsp
         @endif
 
+
       </div>
   </div>
   </div>  
