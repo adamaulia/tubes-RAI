@@ -24,6 +24,7 @@
   
   <body>
     <center>
+    <div>
     <div style="position: absolute; left: 50%; top: 15px">
         <div style="position: relative; left: -50%;">     
         <img src="image\header.jpg" width="1050" height="120">        
@@ -81,7 +82,7 @@
               <label class="control-label col-sm-2" name="fullname" >Full Name :</label>
               <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
-                <input type="text" class="form-control" value="{{$user->name }}" name="username" readonly>
+                <input type="text" class="form-control" value="{{$user->name }}" readonly>
               </div>
             </div>                       
 
@@ -89,7 +90,7 @@
               <label class="control-label col-sm-2" name="class">Class :</label>
               <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
-                <input type="text" class="form-control" value="{{$user->class }}" name="username" readonly>
+                <input type="text" class="form-control" value="{{$user->class }}" readonly>
               </div>
             </div>
 
@@ -97,7 +98,7 @@
               <label class="control-label col-sm-2" name="class">Major :</label>
               <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
-                <input type="text" class="form-control" value="{{$user->major }}" name="username" readonly>
+                <input type="text" class="form-control" value="{{$user->major }}" readonly>
               </div>
             </div>
 
@@ -105,7 +106,7 @@
               <label class="control-label col-sm-2" name="NIM">NIM :</label>
               <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
-                <input type="text" class="form-control" value="{{$user->nim }}" name="username" readonly>
+                <input type="text" class="form-control" value="{{$user->nim }}" readonly>
               </div>
             </div>
 
@@ -114,7 +115,7 @@
               <div class="col-sm-4">
                 <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
-                <input type="text" class="form-control" value="{{$user->faculty }}" name="username" readonly>
+                <input type="text" class="form-control" value="{{$user->faculty }}" readonly>
               </div>
             </div>
             </div>
@@ -124,7 +125,7 @@
               <div class="col-sm-4">
                 <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
-                 <input type="text" class="form-control" value="{{$user->level }}" name="username" readonly>
+                 <input type="text" class="form-control" value="{{$user->level }}" readonly>
               </div>
               </div>
             </div>
@@ -133,7 +134,7 @@
               <label class="control-label col-sm-2" name="membership_type">Membership Type :</label>
               <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
-                <input type="text" class="form-control" value="{{$user->membership_type }}" name="username" readonly>
+                <input type="text" class="form-control" value="{{$user->membership_type }}" readonly>
               </div>
               </div>
 
@@ -161,7 +162,7 @@
       <a href="contact"><font color="white" size="2">Contact Us</font></a>
     </div>    
 
-   
+   </div>
     </center>
   </body>
 
