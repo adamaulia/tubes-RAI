@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('tes',function(){
@@ -69,3 +69,5 @@ Route::get('report', 'pagescontroller@report');
 	
 // 	echo " tes register";
 // });
+
+Route::resource('news','NewsController');
