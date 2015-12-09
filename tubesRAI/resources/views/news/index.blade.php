@@ -1,8 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-
+    @if(Auth::user())
     <h1>News <a href="{{ route('news.create') }}" class="btn btn-primary pull-right btn-sm">Add New News</a></h1>
+    @endif
     <div class="table">
         <table class="table table-bordered table-striped table-hover">
             <thead>
