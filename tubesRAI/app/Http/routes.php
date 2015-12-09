@@ -71,3 +71,4 @@ Route::get('report', 'pagescontroller@report');
 // });
 
 Route::resource('news','NewsController');
+Route::resource('activity', 'ActivityController');

@@ -6,10 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Payment extends Model
 {
-    //
+    public function participant()
+	{
+		return $this->hasOne('App\Participant','nim')
+	}
 }
 
-public function participant()
-{
-	return $this->hasOne('App\Participant','nim')
-}
