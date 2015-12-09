@@ -73,31 +73,31 @@
         <div class="container">        
           <form class="form-horizontal" role="form">
             <div class="form-group">
-              <label class="control-label col-sm-2" for="fullname">Full Name :</label>
+              <label class="control-label col-sm-2" name="fullname">Full Name :</label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" placeholder="Enter full name" >
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="nim">NIM :</label>
+              <label class="control-label col-sm-2" name="nim">NIM :</label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" placeholder="NIM" >
               </div>
             </div>  
             <div class="form-group">
-              <label class="control-label col-sm-2" for="Class">Class :</label>
+              <label class="control-label col-sm-2" name="Class">Class :</label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" placeholder="class" >
               </div>
             </div>                  
             <div class="form-group">
-              <label class="control-label col-sm-2" for="major">Major :</label>
+              <label class="control-label col-sm-2" name="major">Major :</label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" placeholder="class" >
               </div>
             </div>                                                  
             <div class="form-group">
-              <label class="control-label col-sm-2" for="shift">Shift :</label>
+              <label class="control-label col-sm-2" name="shift">Shift :</label>
               <div class="col-sm-1">
                 <select class="selectpicker">
                   <option>Shift 1</option>
@@ -109,13 +109,13 @@
               </div>
             </div>                      
             <div class="form-group">
-              <label class="control-label col-sm-2" for="date">Date :</label>
+              <label class="control-label col-sm-2" name="date">Date :</label>
               <div class="col-sm-4">
                 <input type="date" class="form-control" placeholder="Enter Date" >
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="activity">Esap Activity :</label>
+              <label class="control-label col-sm-2" name="activity">Esap Activity :</label>
               <div class="col-sm-4">
                 <input type="text" class="form-control" placeholder="class" >
               </div>
@@ -129,7 +129,15 @@
         </div>
       </div>
     </div>
-
+    
+    <div style="position: absolute; left: 50%; top: 735px">
+    <label>@2016</label>
+    </div>
+    <div style="position: absolute; left: 75%; top: 735px">
+      <a href="about"><font color="white" size="2">About Us</font></a>
+      &nbsp&nbsp&nbsp
+      <a href="contact"><font color="white" size="2">Contact Us</font></a>
+    </div>
     
 
    

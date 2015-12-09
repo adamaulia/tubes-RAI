@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>    
   <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css">
@@ -33,15 +34,16 @@
   <div style="position: absolute; left: 55%; top: 63px">
     <div style="position: relative; left: -36%; ">      
     <div class="container"> 
-      <div>
-        <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp        
-        <a href="register"><b><font color="white" size='4'>REGISTER</font></b></a>&nbsp&nbsp&nbsp
-        <a href="news"><b><font color="white" size='4'>NEWS</font></b></a>&nbsp&nbsp&nbsp
-        <a href="login"><b><font color="white" size='4'>LOG IN</font></b></a>&nbsp&nbsp&nbsp
-      </div>
+      <div class="btn-group">   
+        <form action="loginStaff" method="post">
+        <button type="button" class="btn btn-primary">Home</button>
+        
+          <button type="button" class="btn btn-primary">Log In</button>
+        </form>
+    </div>
   </div>
   </div>  
-  </div> 
+  </div>
 
   <div style="position: absolute; left: 50%; top: 670px">
      <div style="position: relative; left: -50%;">     
@@ -57,29 +59,52 @@
     </div>
   </div>
 
-  <div style="position: absolute; left: 50%; top: 250px ;width:900px">
+  <div style="position: absolute; left: 50%; top: 250px ;width:500px">
     <div style="position: relative; left: -50%;">       
       <div style=" border-style: solid; background-color:white">
-        <h1><b>News</b></h1>
-        <p>ESAP schedule 2015</p>
-          <div style="position: relative; left: -38%;">       
-            <img src="image\news.png" width="100px" height="100px">
-            <p></p>
+        <h1>Login</h1>
+        <div class="container">                  
+          <form class="form-horizontal" role="form" action="/auth/login" method="post">
+            {!! csrf_field() !!}
+            <div class="form-group">
+              <label class="control-label col-sm-2" name="username">Username :</label>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="Enter username" name="username">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" name="password">password :</label>
+              <div class="col-sm-3">
+                <input type="password" class="form-control" placeholder="Enter password" name="password">
+              </div>
+            </div>
+            <div class="form-group">        
+              <div class="col-sm-offset-2 col-sm-1">
+                <button type="login" class="btn btn-default">LOGIN</button>
+              </div>
+            </div>
           </div>
+        </form>
+        @if ($errors->any())
+        <ul class="alert alert-danger">
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+        @endif
       </div>
     </div>
   </div>
 
-    <div style="position: absolute; left: 50%; top: 735px">
+  <div style="position: absolute; left: 50%; top: 735px">
     <label>@2016</label>
     </div>
-    <div style="position: absolute; left: 75%; top: 735px">
+    <!-- <div style="position: absolute; left: 75%; top: 735px">
       <a href="about"><font color="white" size="2">About Us</font></a>
       &nbsp&nbsp&nbsp
       <a href="contact"><font color="white" size="2">Contact Us</font></a>
-    </div>
-
-    </center>
+    </div> -->
+  </center>
   </body>
 
 </html>

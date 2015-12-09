@@ -27,7 +27,7 @@
   	<div style="position: absolute; left: 50%; top: 15px">
         <div style="position: relative; left: -50%;">  		
   			<img src="image\header.jpg" width="1050" height="120"> 	  		
-  		</div>
+  		</div>         
   	</div>
 
   <div style="position: absolute; left: 55%; top: 63px">
@@ -35,12 +35,14 @@
     <div class="container"> 
       <div>
         <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp        
+        <a href="home"><b><font color="white" size='4'>REGISTER</font></b></a>&nbsp&nbsp&nbsp        
+        <a href="login"><b><font color="white" size='4'>NEWS</font></b></a>&nbsp&nbsp&nbsp
         <a href="login"><b><font color="white" size='4'>LOG OUT</font></b></a>&nbsp&nbsp&nbsp
       </div>
   </div>
   </div>  
   </div> 
-
+                                                                                                                                                                                                                                   
   <div style="position: absolute; left: 50%; top: 670px">
     <div style="position: relative; left: -50%;">     
       <img src="image\footer.jpg" width="1050" height="120">              
@@ -55,19 +57,37 @@
     </div>
   </div>
 
-  <div style="position: absolute; left: 50%; top: 170px">
+  <div style="position: absolute; left: 50%; top: 300px">
        <div style="position: relative; left: -50%;">     
-        <img src="image\border.jpg" width="650" height="490">              
+        <img src="image\border.jpg" width="550" height="250">              
       </div>
     </div>   
 
     <!-- Form -->
-    <div style="position: absolute; left: 50%; top: 165px">
+    <div style="position: absolute; left: 50%; top: 310px">
       <div style="position: relative; left: -50%;">  
-        <h1>Tutor and Members Attendance Report</h1>    
+        <h1>Upload Bukti Pembayaran</h1>            
       </div>  
     </div>
-     
+
+    <div style="position: absolute; left: 50%; top: 410px">
+      <div style="position: relative; left: -25%;">  
+        <div class="container">        
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="control-label col-sm-2">Choose File :</label>
+              <div class="col-sm-2">
+                <input type="file" name="img">              
+              </div>
+              <div class="col-sm-1">
+                <input type="submit" value = "Upload"></input>
+              </div> 
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>  
+
     <div style="position: absolute; left: 50%; top: 735px">
     <label>@2016</label>
     </div>
@@ -76,7 +96,7 @@
       &nbsp&nbsp&nbsp
       <a href="contact"><font color="white" size="2">Contact Us</font></a>
     </div>     
-
+     
     </center>
   </body>
 

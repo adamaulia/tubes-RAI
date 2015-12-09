@@ -61,10 +61,16 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 Route::get('home','pagescontroller@home');
 Route::get('register', 'pagescontroller@register');
 Route::get('news', 'pagescontroller@news');
+Route::get('profil', 'pagescontroller@profil');
 Route::get('login', 'pagescontroller@login');
 Route::get('tutor', 'pagescontroller@tutor');
 Route::get('staff', 'pagescontroller@staff');
 Route::get('report', 'pagescontroller@report');
+Route::get('member', 'pagescontroller@member');
+Route::get('pay', 'pagescontroller@pay');
+Route::get('about', 'pagescontroller@about');
+Route::get('contact', 'pagescontroller@contact');
+Route::get('loginStaff', 'pagescontroller@loginStaff');
 // Route::post('auth/register', function(){
 	
 // 	echo " tes register";

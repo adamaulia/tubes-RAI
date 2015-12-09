@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>    
   <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css">
@@ -62,17 +63,18 @@
       <div style=" border-style: solid; background-color:white">
         <h1>Login</h1>
         <div class="container">                  
-          <form class="form-horizontal" role="form">
+          <form class="form-horizontal" role="form" action="/auth/login" method="post">
+            {!! csrf_field() !!}
             <div class="form-group">
-              <label class="control-label col-sm-2" for="username">Username :</label>
+              <label class="control-label col-sm-2" name="username">Username :</label>
               <div class="col-sm-3">
-                <input type="text" class="form-control" placeholder="Enter username" >
+                <input type="text" class="form-control" placeholder="Enter username" name="username">
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="password">password :</label>
+              <label class="control-label col-sm-2" name="password">password :</label>
               <div class="col-sm-3">
-                <input type="password" class="form-control" placeholder="Enter password" >
+                <input type="password" class="form-control" placeholder="Enter password" name="password">
               </div>
             </div>
             <div class="form-group">        
@@ -82,11 +84,26 @@
             </div>
           </div>
         </form>
+        @if ($errors->any())
+        <ul class="alert alert-danger">
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+        @endif
       </div>
     </div>
   </div>
 
-    </center>
+  <div style="position: absolute; left: 50%; top: 735px">
+    <label>@2016</label>
+    </div>
+    <div style="position: absolute; left: 75%; top: 735px">
+      <a href="about"><font color="white" size="2">About Us</font></a>
+      &nbsp&nbsp&nbsp
+      <a href="contact"><font color="white" size="2">Contact Us</font></a>
+    </div>
+  </center>
   </body>
 
 </html>

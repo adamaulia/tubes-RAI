@@ -35,7 +35,32 @@ class PagesController extends Controller
 
     public function report(){
         return view('report');        // view page '/resources/views/register.php'
+
+    } 
+
+    public function logout(){
+        return view('logout');
+    }  
+
+    public function member(){
+        return view('member');        // view page '/resources/views/register.php'
+    } 
+
+    public function pay(){
+        return view('pay');        // view page '/resources/views/register.php'
+    } 
+
+    public function about(){
+        return view('about');        // view page '/resources/views/register.php'
     }   
+
+    public function contact(){
+        return view('contact');        // view page '/resources/views/register.php'
+    }   
+
+    public function loginStaff(){
+        return view('loginStaff');
+    }
     /**
      * Display a listing of the resource.
      *
