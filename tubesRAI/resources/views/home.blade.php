@@ -36,8 +36,16 @@
     <div class="container"> 
       <div>
 
+
+
+      
+
+        <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp       
+
+
         <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp  
         @if(Auth::guest())      
+
         <a href="register"><b><font color="white" size='4'>REGISTER</font></b></a>&nbsp&nbsp&nbsp
         @else
         @endif
@@ -51,7 +59,10 @@
 
         <a href="member/{{Auth::user()->username}}"><b><font color="white" size='4'>{{ Auth::user()->username }}</font></b></a>&nbsp&nbsp&nbsp
 
+       <!--  <a href="member"><b><font color="white" size='4'>{{ Auth::user()->username }}</font></b></a>&nbsp&nbsp&nbsp -->
+
         <!-- <a href="member"><b><font color="white" size='4'>{{ Auth::user()->username }}</font></b></a>&nbsp&nbsp&nbsp -->
+
 
         <a href="auth/logout"><b><font color="white" size='4'>LOG OUT</font></b></a>&nbsp&nbsp&nbsp
         @endif
