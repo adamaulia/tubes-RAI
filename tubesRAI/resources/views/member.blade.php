@@ -112,7 +112,7 @@
 
             <div class="form-group">
               <label class="control-label col-sm-2" name="faculty">Faculty :</label>
-              <div class="col-sm-4">
+              <div class="col-sm-4">/
                 <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
                 <input type="text" class="form-control" value="{{$user->faculty }}" readonly>
@@ -142,7 +142,9 @@
              
             <div class="form-group">        
               <div class="col-sm-offset-2 col-sm-1">
-                <button type="submit" class="btn btn-default">Upload Bukti Pembayaran</button>
+                <form action="/pay">
+                <a href="/pay"><button type="button" class="btn btn-default">Upload Bukti Pembayaran</button></a>
+                </form>
               </div>
             </div>
                       

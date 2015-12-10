@@ -36,6 +36,7 @@
     <div class="container"> 
       <div>
 
+<<<<<<< HEAD
 
 
       
@@ -44,6 +45,9 @@
 
 
           
+=======
+        <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp  
+>>>>>>> 2ede546a6f5a356ba2e184d7e11321aa18d9d8b5
         @if(Auth::guest())      
 
         <a href="register"><b><font color="white" size='4'>REGISTER</font></b></a>&nbsp&nbsp&nbsp
