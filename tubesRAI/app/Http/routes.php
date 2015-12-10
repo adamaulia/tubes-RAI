@@ -91,6 +91,7 @@ Route::get('loginTutor', 'pagescontroller@loginTutor');
 // });
 
 Route::get('api/news/', 'NewsController@apiIndex');
+Route::get('api/activity/', 'ActivityController@apiIndex');
 
 Route::resource('news','NewsController');
 Route::resource('activity', 'ActivityController');

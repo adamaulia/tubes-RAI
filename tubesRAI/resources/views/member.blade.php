@@ -27,7 +27,7 @@
     <div>
     <div style="position: absolute; left: 50%; top: 15px">
         <div style="position: relative; left: -50%;">     
-        <img src="image\header.jpg" width="1050" height="120">        
+        <img src="/image\header.jpg" width="1050" height="120">        
       </div>
     </div>
 
@@ -46,21 +46,21 @@
 
   <div style="position: absolute; left: 50%; top: 670px">
      <div style="position: relative; left: -50%;">     
-      <img src="image\footer.jpg" width="1050" height="120">              
+      <img src="/image\footer.jpg" width="1050" height="120">              
     </div>
   </div>
 
   <div style="position: absolute; left: 50%; top: 135px">
     <div style="position: relative; left: -50%;">       
         <div class="container">                  
-          <img src="image\register.jpg" width="1050px" height="565px">       
+          <img src="/image\register.jpg" width="1050px" height="565px">       
       </div>
     </div>
   </div>
 
   <div style="position: absolute; left: 50%; top: 170px">
        <div style="position: relative; left: -50%;">     
-        <img src="image\border.jpg" width="650" height="490">              
+        <img src="/image\border.jpg" width="650" height="490">              
       </div>
     </div>
 
