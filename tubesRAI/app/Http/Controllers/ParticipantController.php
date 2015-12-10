@@ -127,5 +127,11 @@ class ParticipantController extends Controller
         //
     }
 
+    public function upload($id){
+        if(Input::hasFile('foto'))
+            $file=Input::file('file');
+            $file->move('upload',$file->getClientOriginalName());
+            echo '<img src="upload/'.$file->getClientOriginalName().'</img>';
+    }
 
 }
