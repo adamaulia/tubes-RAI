@@ -2,13 +2,18 @@
 
 namespace App\Http\Controllers;
 
-//use Illuminate\Http\Request;
+
 
 use Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\User;
 use App\Participant;
+use Input;
+use DB;
+use Auth;
+
+
 
 class ParticipantController extends Controller
 {
@@ -127,11 +132,18 @@ class ParticipantController extends Controller
         //
     }
 
-    public function upload($id){
-        if(Input::hasFile('foto'))
-            $file=Input::file('file');
-            $file->move('upload',$file->getClientOriginalName());
-            echo '<img src="upload/'.$file->getClientOriginalName().'</img>';
+    public function upload(Request $request){
+
+             $file=Input::get('img');
+             $file->move('upload',$file->getClientOriginalName());
+             echo "uploaded ".$file2;
+           //  echo '<img src="upload/'.$file->getClientOriginalName().'</img>';
+             //echo '<img src="'.$file.'"</img>';
+             
+
+             
+
     }
+       
 
 }

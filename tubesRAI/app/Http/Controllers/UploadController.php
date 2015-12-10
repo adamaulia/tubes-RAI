@@ -6,11 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Input;
-use DB;
-use App\User;
+use \Input as Input;
 
-class UserController extends Controller
+class UploadController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -63,7 +61,6 @@ class UserController extends Controller
     public function edit($id)
     {
         //
-
     }
 
     /**
@@ -89,19 +86,18 @@ class UserController extends Controller
         //
     }
 
-    public function updatePassword(Request $request){
-        $user=Input::get('name');
-        $password=Input::get('password');
+    public function doUpload(Request $request){
 
-        echo "user ".$user;
-        echo "  user ".$password;
+            $url = Input::get('img');
+            $extension = pathinfo($url,PATHINFO_EXTENSION);
 
-        //$User = User::findOrFail($user);
-        //$User->update($request->all());
+            $filename=$url.'.'.$extension;
 
-        //return view('news.edit', compact('news'));
+            $file=file_get_contents($url);
+            $save=file_put_contents('public/'. $filename,$file2);
+
+
+
+
     }
-
-
-    
 }

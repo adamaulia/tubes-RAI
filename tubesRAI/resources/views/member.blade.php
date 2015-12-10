@@ -27,7 +27,7 @@
     <div>
     <div style="position: absolute; left: 50%; top: 15px">
         <div style="position: relative; left: -50%;">     
-        <img src="image\header.jpg" width="1050" height="120">        
+        <img src="/image\header.jpg" width="1050" height="120">        
       </div>
     </div>
 
@@ -46,25 +46,26 @@
 
   <div style="position: absolute; left: 50%; top: 670px">
      <div style="position: relative; left: -50%;">     
-      <img src="image\footer.jpg" width="1050" height="120">              
+      <img src="/image\footer.jpg" width="1050" height="120">              
     </div>
   </div>
 
   <div style="position: absolute; left: 50%; top: 135px">
     <div style="position: relative; left: -50%;">       
         <div class="container">                  
-          <img src="image\register.jpg" width="1050px" height="565px">       
+          <img src="/image\register.jpg" width="1050px" height="565px">       
       </div>
     </div>
   </div>
 
   <div style="position: absolute; left: 50%; top: 170px">
        <div style="position: relative; left: -50%;">     
-        <img src="image\border.jpg" width="650" height="490">              
+        <img src="/image\border.jpg" width="650" height="490">              
       </div>
     </div>
 
    
+   {!! Form::open(array('url' => 'update_password', 'method' => 'post')) !!}
 
     <!-- Form -->
     <div style="position: absolute; left: 50%; top: 165px">
@@ -76,13 +77,13 @@
     <div style="position: absolute; left: 50%; top: 240px">
       <div style="position: relative; left: -30%;">  
         <div class="container">        
-          <form class="form-horizontal" role="form">
+          <form class="form-horizontal" role="form" >
 
             <div class="form-group">
               <label class="control-label col-sm-2" name="fullname" >Full Name :</label>
               <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
-                <input type="text" class="form-control" value="{{$user->name }}" readonly>
+                <input type="text" class="form-control" name="name" value="{{$user->name }}" readonly >
               </div>
             </div>                       
 
@@ -112,7 +113,7 @@
 
             <div class="form-group">
               <label class="control-label col-sm-2" name="faculty">Faculty :</label>
-              <div class="col-sm-4">
+              <div class="col-sm-4">/
                 <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
                 <input type="text" class="form-control" value="{{$user->faculty }}" readonly>
@@ -131,6 +132,16 @@
             </div>
 
             <div class="form-group">
+              <label class="control-label col-sm-2" name="level">update password :</label>
+              <div class="col-sm-4">
+                <div class="col-sm-4">
+                <label class="control-label col-sm-2"></label>
+                 <input type="text" class="form-control" name="password" >
+              </div>
+              </div>
+            </div>
+
+            <div class="form-group">
               <label class="control-label col-sm-2" name="membership_type">Membership Type :</label>
               <div class="col-sm-4">
                 <label class="control-label col-sm-2"></label>
@@ -142,16 +153,23 @@
              
             <div class="form-group">        
               <div class="col-sm-offset-2 col-sm-1">
-                <button type="submit" class="btn btn-default">Upload Bukti Pembayaran</button>
+                <form action="/pay">
+                <a href="/pay"><button type="button" class="btn btn-default">Upload Bukti Pembayaran</button></a>
+                </form>
               </div>
             </div>
                       
-            </div>            
+            </div>
+            </br>
+     
+                <button type="submit" class="btn btn-default">update password</button>
+              </div>            
 
           </form>
         </div>
       </div>
     </div>
+    {!! Form::close() !!}
 
     <div style="position: absolute; left: 50%; top: 735px">
     <label>@2016</label>

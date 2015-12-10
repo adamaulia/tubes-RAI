@@ -19,6 +19,9 @@ Route::get('tes',function(){
 	echo " tes";
 });
 
+
+
+
 Route::get('home',['middleware'=>'auth',function(){
 	
 		echo 'welcome home '.Auth::user()->username.'.';
@@ -82,12 +85,17 @@ Route::get('pay', 'pagescontroller@pay');
 Route::get('about', 'pagescontroller@about');
 Route::get('contact', 'pagescontroller@contact');
 Route::get('staff', 'pagescontroller@loginStaff');
-Route::get('tutor', 'pagescontroller@loginTutor');
+Route::get('tutor', 'pagescontroller@tutor');
 Route::get('loginStaff', 'pagescontroller@loginStaff');
 Route::get('loginTutor', 'pagescontroller@loginTutor');
+Route::post('update_password','UserController@updatePassword');
 // Route::post('auth/register', function(){
 	
 // 	echo " tes register";
+// });
+Route::post('upload_foto','UploadController@doupload');
+// Route::get('upload',function(){
+// 	echo "uploaded";
 // });
 
 Route::get('api/news/', 'NewsController@apiIndex');

@@ -62,7 +62,7 @@
         <img src="image\border.jpg" width="550" height="250">              
       </div>
     </div>   
-
+{!! Form::open(['url' => 'upload_foto', 'method' => 'post']) !!}
     <!-- Form -->
     <div style="position: absolute; left: 50%; top: 310px">
       <div style="position: relative; left: -50%;">  
@@ -73,11 +73,12 @@
     <div style="position: absolute; left: 50%; top: 410px">
       <div style="position: relative; left: -25%;">  
         <div class="container">        
-          <form class="form-horizontal" role="form">
+          <form class="form-horizontal" role="form" method="" action="">
             <div class="form-group">
               <label class="control-label col-sm-2">Choose File :</label>
               <div class="col-sm-2">
-                <input type="file" name="img">              
+                <input type="file" name="img">
+
               </div>
               <div class="col-sm-1">
                 <input type="submit" value = "Upload"></input>
@@ -87,6 +88,7 @@
         </div>
       </div>
     </div>  
+    {!! Form::close()!!}}
 
     <div style="position: absolute; left: 50%; top: 735px">
     <label>@2016</label>
