@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 
 use App\Activity;
 use Illuminate\Http\Request;
+use Response;
 use Carbon\Carbon;
 use Session;
 
@@ -106,6 +107,13 @@ class ActivityController extends Controller
         Session::flash('flash_message', 'Activity successfully deleted!');
 
         return redirect('activity');
+    }
+
+    public function apiIndex(){
+        $activity = Activity::all();
+        return Response::json([
+            'data' => $activity->toArray()
+            ],200);
     }
 
 }
