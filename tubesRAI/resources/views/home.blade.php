@@ -36,13 +36,6 @@
     <div class="container"> 
       <div>
 
-
-
-      
-
-        <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp       
-
-
         <a href="home"><b><font color="white" size='4'>HOME</font></b></a>&nbsp&nbsp&nbsp  
         @if(Auth::guest())      
 
